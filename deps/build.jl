@@ -109,7 +109,7 @@ try # make sure deps.jl file is removed on error
     const libpython = "$(escape_string(libpy_name))"
     const pyprogramname = "$(escape_string(programname))"
     const pyversion_build = $(repr(pyversion))
-    const PYTHONHOME = "$(escape_string(PYTHONHOME))"
+    const PYTHONHOME = ""
 
     "True if we are using the Python distribution in the Conda package."
     const conda = $use_conda
